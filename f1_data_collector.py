@@ -2,10 +2,14 @@ import fastf1
 from pathlib import Path
 import pandas as pd
 from collections import defaultdict
+import shutil
 import warnings
 warnings.filterwarnings('ignore')
 
+
 cache_dir = Path('cache')
+if cache_dir.exists():
+    shutil.rmtree(cache_dir)
 cache_dir.mkdir(exist_ok=True)
 fastf1.Cache.enable_cache(cache_dir)
 
