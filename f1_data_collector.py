@@ -207,7 +207,7 @@ def create_summary_statistics(df):
 
 
 if __name__ == "__main__":
-    years = [2025]
+    years = [2023, 2024, 2025]
     
     print("Starting F1 data collection...")
     print(f"Years: {years}")
